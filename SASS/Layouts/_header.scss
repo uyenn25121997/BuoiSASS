@@ -1,0 +1,57 @@
+header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 100;
+    .sticky{
+        background-color: $color-white-1;
+        .navbar{
+            a{
+                img{
+                    width: 0px;
+                    height: 0px;
+                }
+            }
+            .collapse{
+                .header_right{
+                    .phone-icon{
+                        button{
+                            padding: 6px 20px;   
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .navbar-brand img{
+        width: 80px;
+    }
+    .navbar-toggler-icon{
+        background-image: #b61984;
+    font-size: 24px;
+    font-weight: 13px;
+    top: 12px;
+    }
+    #navbarContent .navbar-nav a{
+        @include styleText($fs-7,$fw-3,$color-black-1);
+        padding: 8px 55px 8px 0;
+
+    &:hover{
+        @include styleTextHover($ts-1,$color-pink-1);
+    }
+    }
+    .iconNav a{
+        text-decoration: none;
+        padding-right: 12px;
+        transition: $ts-1;
+    
+    @include styleText($fs-7, $fw-3, $color-black-1);
+    &:hover{
+        @include styleTextHover($ts-1,$color-pink-1);
+    }
+    }
+}

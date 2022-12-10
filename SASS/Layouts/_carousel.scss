@@ -1,0 +1,16 @@
+.carousel{
+    background-image: url(./../img/yellow_top_wave_01.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: $pd-7 0 $pd-7 0;
+    .carousel-text h5{
+        @include styleText($fs-4,$fw-3,$color-pink-1);
+        padding-top: $pd-5;
+    }
+    .carousel-text h1{
+        @include styleText($fs-6,$fw-4,$color-black-2);
+    }
+    .carousel-footer{
+        bottom:0;
+    }
+}

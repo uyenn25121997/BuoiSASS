@@ -1,0 +1,8 @@
+.phone-icon{
+    @include styleText($fs-7,$fw-3,$color-white-1);
+    @include styleButton($bs-1, none, $radius-1, $color-pink-1 , $pd-3, $pd-1, $ts-4);
+
+    &:hover{
+        @include styleButtonHover($color-pink-1,$bs-2,$color-white-1,$ts-4);
+    }
+}

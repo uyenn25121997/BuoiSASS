@@ -1,0 +1,122 @@
+.footer {
+	padding: 180px 0;
+	background-color: #aa017e;
+	.container {
+		padding-bottom: 60px;
+	}
+	.col-lg-3 {
+		z-index: 3;
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+	.footer-info {
+		h4 {
+			color: #ffffff;
+			font-size: 24px;
+			font-weight: 700;
+		}
+		a {
+			color: #ffffff;
+			font-size: 13px;
+			font-weight: 500;
+			.ft-social-icon {
+				&:hover {
+					color: #181818;
+					transition: all 0.2s;
+				}
+			}
+			.ft-menu-item {
+				&:hover {
+					opacity: 0.7;
+					transition: all 0.2s;
+				}
+			}
+			i {
+				margin-right: 10px;
+				transition: all 0.2s;
+			}
+		}
+		div {
+			color: #ffffff;
+			font-size: 13px;
+			font-weight: 500;
+			.ft-social-icon {
+				&:hover {
+					color: #181818;
+					-webkit-transition: all 0.2s;
+					transition: all 0.2s;
+				}
+			}
+			.ft-menu-item {
+				&:hover {
+					text-decoration: none;
+					opacity: 0.7;
+					transition: all 0.2s;
+				}
+			}
+			i {
+				margin-right: 10px;
+				transition: all 0.2s;
+			}
+		}
+		.input-ft {
+			@include styleText($fs-7,$fw-2,$color-black-1);
+			text-align: center;
+			padding: 12px 12px 12px 36px;
+			border-radius: 24px;
+			border: 1px solid #b6258f;
+			background: #aa017e;
+			padding: 14px 12px 14px 12px;
+			margin: 0;
+			transition: all 0.5s;
+			&:focus-visible {
+				border: 1px solid #ffffff;
+				outline: 0;
+				transition: all 0.5s;
+			}
+			&:-ms-input-placeholder {
+				color: #ffffff;
+			}
+			&::-ms-input-placeholder {
+				color: #ffffff;
+			}
+			&::placeholder {
+				color: #ffffff;
+			}
+		}
+		.btn-ft {
+			letter-spacing: 2px;
+			padding: 14px 55px;
+			box-shadow: 0 0 0 48px #ffffff inset;
+			border-radius: 55px;
+			transition: all 0.3s ease;
+			padding: 15px 12px 15px 12px;
+			color: #181818;
+			font-size: 13px;
+			font-weight: 600;
+			border: none;
+			&:hover {
+				@include styleButtonHover($color-white-1,$bs-4,$color-bg-2,$ts-4);
+			}
+		}
+		.info-menu {
+			padding: 12px 0;
+			border-bottom: 1px solid #990171;
+		}
+	}
+	.footer-bottom-wave {
+		background-image: url("../img/footer_background.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+		position: absolute;
+		bottom: -1px;
+		height: 35vw;
+		bottom: -15px;
+	}
+}

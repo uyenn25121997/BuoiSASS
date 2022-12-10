@@ -1,0 +1,49 @@
+.member {
+    background-color: $color-bg-1;
+    position: relative;
+    z-index: 10;
+    .card-view {
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: $color-white-1;
+
+        &:hover{
+            box-shadow: $bs-3;
+            transition: $ts-1;
+        }
+
+        .scale-avt{
+            transform: scale(1);
+            transition: $ts-5;
+
+            &:hover{
+                transform: scale(1.1);
+                transition: $ts-5;
+            }
+        }
+    }
+    .member-content {
+        // background-color: $color-bg-1;
+        z-index: 1000;
+        .card-info {
+            padding: $pd-9;
+        }
+        .card-info span {
+            @include styleText($fs-4, $fw-3, $color-pink-1);
+        }
+        .card-info h4 {
+            @include styleText($fs-9, $fw-3, $color-black-1);
+        }
+        .card-info p {
+            @include styleText($fs-7, $fw-2, $color-black-1);
+        }
+
+    }
+    .member-bg img {
+        bottom: 0;
+        z-index: 0;
+    }
+}
+:root {
+    --animate-delay: 0.5s;
+  }
